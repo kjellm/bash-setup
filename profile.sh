@@ -1,7 +1,5 @@
 export PS1="\u@\h:\w\$ "
 
-#[[ -s "/Users/kjellm/.rvm/scripts/rvm" ]] && source "/Users/kjellm/.rvm/scripts/rvm"
-
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
@@ -12,4 +10,4 @@ fi
 
 eval "$(rbenv init -)"
 
-. "$HOME/.bashrc"
+. "$HOME/.bash.d/rc.sh"
