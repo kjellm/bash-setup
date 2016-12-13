@@ -1,6 +1,6 @@
 function g {
   if [[ $# > 0 ]]; then
-    git $@
+    git "$@"
   else
     git status
   fi
